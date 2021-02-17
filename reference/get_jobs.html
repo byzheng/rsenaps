@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get a collection of observations — get_observations • RSenaps</title>
+<title>The all jobs for a workflow in the Senaps — get_jobs • RSenaps</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Get a collection of observations — get_observations" />
-<meta property="og:description" content="Get a collection of observations" />
+<meta property="og:title" content="The all jobs for a workflow in the Senaps — get_jobs" />
+<meta property="og:description" content="The all jobs for a workflow in the Senaps" />
 
 
 
@@ -115,63 +115,37 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get a collection of observations</h1>
+    <h1>The all jobs for a workflow in the Senaps</h1>
     
-    <div class="hidden name"><code>get_observations.Rd</code></div>
+    <div class="hidden name"><code>get_jobs.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Get a collection of observations</p>
+    <p>The all jobs for a workflow in the Senaps</p>
     </div>
 
-    <pre class="usage"><span class='fu'>get_observations</span><span class='op'>(</span>
-  <span class='va'>streamid</span>,
-  start <span class='op'>=</span> <span class='cn'>NULL</span>,
-  end <span class='op'>=</span> <span class='cn'>NULL</span>,
-  si <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  ei <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  tz <span class='op'>=</span> <span class='st'>"GMT"</span>,
-  descending <span class='op'>=</span> <span class='cn'>FALSE</span>,
-  limit <span class='op'>=</span> <span class='fl'>1000</span>
-<span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>get_jobs</span><span class='op'>(</span>workflowid <span class='op'>=</span> <span class='cn'>NULL</span>, limit <span class='op'>=</span> <span class='cn'>NULL</span>, skip <span class='op'>=</span> <span class='cn'>NULL</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>streamid</th>
-      <td><p>Stream identifier or a comma separated list of stream identifiers</p></td>
-    </tr>
-    <tr>
-      <th>start</th>
-      <td><p>Start date</p></td>
-    </tr>
-    <tr>
-      <th>end</th>
-      <td><p>End date</p></td>
-    </tr>
-    <tr>
-      <th>si</th>
-      <td><p>Is the start parameter treated as an inclusive boundary</p></td>
-    </tr>
-    <tr>
-      <th>ei</th>
-      <td><p>Is the end parameter treated as an inclusive boundary</p></td>
-    </tr>
-    <tr>
-      <th>tz</th>
-      <td><p>The timezone of timestamp. GMT/UTC time in default</p></td>
-    </tr>
-    <tr>
-      <th>descending</th>
-      <td><p>Sort the results. By default results are returned in ascending order.</p></td>
+      <th>workflowid</th>
+      <td><p>Workflow id</p></td>
     </tr>
     <tr>
       <th>limit</th>
-      <td><p>Limit the number of results. The limit is 1000 by default.</p></td>
+      <td><p>Number of jobs retrieved</p></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td><p>Skip the number of jobs for pagination</p></td>
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>A list of jobs</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
